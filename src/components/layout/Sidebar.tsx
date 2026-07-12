@@ -17,12 +17,12 @@ const allNavItems = [
   { to: '/settings', icon: Settings, label: 'Settings' },
 ];
 
-// RBAC nav visibility
+// RBAC nav visibility — aligned with target users spec
 const roleNav: Record<Role, string[]> = {
-  'Fleet Manager': ['/dashboard', '/fleet', '/maintenance', '/analytics', '/settings'],
-  'Dispatcher': ['/dashboard', '/trips', '/fleet', '/drivers'],
-  'Safety Officer': ['/dashboard', '/drivers', '/trips', '/maintenance'],
-  'Financial Analyst': ['/dashboard', '/fuel', '/analytics'],
+  'Fleet Manager':    ['/dashboard', '/fleet', '/maintenance', '/analytics', '/settings'],
+  'Dispatcher':       ['/dashboard', '/fleet', '/drivers', '/trips'],
+  'Safety Officer':   ['/dashboard', '/drivers', '/maintenance'],
+  'Financial Analyst':['/dashboard', '/fuel', '/analytics'],
 };
 
 interface SidebarProps {

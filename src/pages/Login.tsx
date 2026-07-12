@@ -19,10 +19,10 @@ type FormData = z.infer<typeof schema>;
 const roles: Role[] = ['Fleet Manager', 'Dispatcher', 'Safety Officer', 'Financial Analyst'];
 
 const roleAccess: Record<Role, string> = {
-  'Fleet Manager': 'Fleet, Maintenance',
-  'Dispatcher': 'Dashboard, Trips',
-  'Safety Officer': 'Drivers, Compliance',
-  'Financial Analyst': 'Fuel & Expenses, Analytics',
+  'Fleet Manager':    'Dashboard, Fleet, Maintenance, Analytics, Settings',
+  'Dispatcher':       'Dashboard, Fleet, Drivers, Trips',
+  'Safety Officer':   'Dashboard, Drivers, Maintenance',
+  'Financial Analyst':'Dashboard, Fuel & Expenses, Analytics',
 };
 
 export default function Login() {

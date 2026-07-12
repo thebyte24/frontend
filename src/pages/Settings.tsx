@@ -13,10 +13,10 @@ const schema = z.object({
 });
 
 const rbacData: RBACRow[] = [
-  { role: 'Fleet Manager', fleet: 'Full', drivers: 'Full', trips: '—', fuelExp: '—', analytics: 'Full' },
-  { role: 'Dispatcher', fleet: 'View', drivers: '—', trips: 'Full', fuelExp: '—', analytics: '—' },
-  { role: 'Safety Officer', fleet: '—', drivers: 'Full', trips: 'View', fuelExp: '—', analytics: '—' },
-  { role: 'Financial Analyst', fleet: 'View', drivers: '—', trips: '—', fuelExp: 'Full', analytics: 'Full' },
+  { role: 'Fleet Manager',    fleet: 'Full', drivers: '—',    trips: '—',    fuelExp: '—',    analytics: 'Full' },
+  { role: 'Dispatcher',       fleet: 'View', drivers: 'Full', trips: 'Full', fuelExp: '—',    analytics: '—'    },
+  { role: 'Safety Officer',   fleet: '—',    drivers: 'Full', trips: '—',    fuelExp: '—',    analytics: '—'    },
+  { role: 'Financial Analyst',fleet: '—',    drivers: '—',    trips: '—',    fuelExp: 'Full', analytics: 'Full' },
 ];
 
 const AccessCell = ({ access }: { access: string }) => {
